@@ -13,22 +13,19 @@
     <!-- Css Link  -->
     <link rel="stylesheet" href="./style.css">
     <!-- Font Awesome Icons CDN Link   -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
-    <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header><!-- 1.Parent Container -->
         <nav class="navBar"><!-- 2.Component -->
             <div class="container"><!-- 3.Component Container-->
                 <div class="row g-2"><!-- 4.Row-->
-                    <div class="col-sm-12 col-xl-6"><!-- 5.Column -->
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6"><!-- 5.Column -->
                         <div class="logoBox"><!-- 6.subColumn -->
                             <figure><img src="./assets/images/logo.png" alt="logoImage"></figure><!-- 7.Content Container -->
                         </div>
                     </div>
-                    <div class="col-sm-12"><!-- 5.Column -->
-                        <div class="homeBox"><!-- 6.subColumn -->
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 "><!-- 5.Column -->
                             <input type="checkbox" id="iconToggle"><!--7.Content Container-->
                             <label for="iconToggle" class="hamburger">
                                 <i class="fa-solid fa-bars"></i>
@@ -51,10 +48,10 @@
                 <div class="row g-2"><!-- 4.Row-->
                     <div class="col-sm-12 col-md-6"><!-- 5.Column -->
                         <div class="heroBox dflex-col"><!-- 6.subColumn -->
-                            <h1>Coffee Heaven</h1><!--7.Content Container-->
-                            <p>Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Adipisci Ipsa Id Vero
+                            <h1 class="fs-50 fw-bold">Coffee Heaven</h1><!--7.Content Container-->
+                            <p class="fs-6 fw-normal">Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Adipisci Ipsa Id Vero
                                 Perferendis, Reiciendis Dolores!</p>
-                            <button class="button" onclick="window.open('#ourMenu', '_self')">About Us</button>
+                            <button type="button">About Us</button>
                         </div>
                     </div>
                 </div>
@@ -62,136 +59,130 @@
         </div>
     </header>
     <main><!-- 1.Parent Container -->
-        <section class="ourMenu"><!-- 2.Component -->
+        <section class="ourMenu py-3"><!-- 2.Component -->
             <div class="container"><!--3.Component Container-->
-                <div class="row"><!-- 4.Row-->
-                    <div class="col-sm-12"><!-- 5.Column-1 -->
+                <div class="row align-items-center"><!-- 4.Row-->
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6"><!-- 5.Column-1 -->
                         <div class="imageBox dflex"><!-- 6.subColumn -->
-                            <figure><img src="./assets/images/ourMenu.jpg" alt="menuImage"></figure><!--7.Content Container-->
+                            <img src="./assets/images/ourMenu.jpg" class="w-100" alt="menuImage"><!--7.Content Container-->
                         </div>
                     </div>
-                    <div class="col-sm-12"><!-- 5.Column-2 -->
-                        <div class="menuBox"><!-- 6.subColumn -->
-                            <h2>A Cup Of Coffee Can Complete Your Day</h2><!--7.Content Container-->
-                            <p>Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Pariatur, Esse Corrupti.
-                                Incidunt Fuga Sit Numquam Est Consequatur Provident Ipsa Quidem! Lorem</p>
-                            <button class="button" onclick="window.open('#popular', '_self')">Our Menu</button>
-                        </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6"><!-- 5.Column-2 -->
+                        <h2 class="fs-1 fw-bold">A Cup Of Coffee Can Complete Your Day</h2><!--7.Content Container-->
+                        <p class="fs-6 fw-normal">Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Pariatur, Esse Corrupti.
+                            Incidunt Fuga Sit Numquam Est Consequatur Provident Ipsa Quidem! Lorem</p>
+                        <button type="button" class="fs-5 px-4 py-2 border-0"> Our Menu</button>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="facility"><!-- 2.Component -->
+        <section class="facility py-3 text-center"><!-- 2.Component -->
             <div class="container"><!-- 3.Component Container-->
                 <div class="row"><!-- 4.Row -->
-                    <div class="col-sm-12"><!-- 5.Column -->
-                        <div class="facilityBox dflex-col"><!-- 6.subColumn -->
-                            <figure class="headingImage"><img src="./assets/images/headingImage.jpg"alt="headingImage"></figure>
-                            <h2>Our Facility</h2><!--7.Content Container-->
-                        </div>
+                    <div class="col-sm-12 col-md-9 col-lg-8 col-xl-8 mx-auto"><!-- 5.Column -->
+                        <img src="./assets/images/headingImage.jpg" class="w-25" alt="headingImage">
+                        <h2 class="fs-1 fw-bold">Our Facility</h2><!--7.Content Container-->
                     </div>
                 </div>
                 <div class="row"><!-- 4.Row -->
-                    <div class="col-sm-12"><!-- 5.Column -->
+                    <div class="col-sm-12 col-md-6 col-xl-3 col-lg-3"><!-- 5.Column -->
                         <div class="facilityCardHeader"><!-- 6.subColumn -->
-                            <figure><img src="./assets/images/coffeeVarieties.png"alt="coffeeVarieties"></figure>
+                            <img src="./assets/images/coffeeVarieties.png"alt="coffeeVarieties">
                         </div><!--7.Content Container-->
                         <div class="facilityCardMain">
-                            <h3>Varieties Of Coffee</h3>
-                            <p>Lorem Ipsum Dolor, Sit Amet Consectetur Adipisicing Elit.</p>
+                            <h3 class="fs-4 fw-normal">Varieties Of Coffee</h3>
+                            <p class="fs-6 fw-normal text-start">Lorem Ipsum Dolor, Sit Amet Consectetur Adipisicing Elit.</p>
                         </div>
                     </div>
-                    <div class="coffeeBeansBlock facilityItems dflex-col"><!-- 5.Column -->
+                    <div class="col-sm-12 col-md-6 col-xl-3 col-lg-3"><!-- 5.Column -->
                         <div class="facilityCardHeader"><!-- 6.subColumn -->
-                            <figure><img src="./assets/images/coffeebeans.png" alt="coffeeBeans">
-                            </figure><!--7.Content Container-->
+                            <img src="./assets/images/coffeebeans.png" alt="coffeeBeans"><!--7.Content Container-->
                         </div>
                         <div class="facilityCardMain">
-                            <h3>Coffee Beans</h3>
-                            <p>Lorem Ipsum Dolor, Sit Amet Consectetur Adipisicing Elit.</p>
+                            <h3 class="fs-4 fw-normal">Coffee Beans</h3>
+                            <p class="fs-6 fw-normal text-start">Lorem Ipsum Dolor, Sit Amet Consectetur Adipisicing Elit.</p>
                         </div>
                     </div>
-                    <div class="sweetsBlock facilityItems dflex-col"><!-- 5.Column -->
+                    <div class="col-sm-12 col-md-6 col-xl-3 col-lg-3"><!-- 5.Column -->
                         <div class="facilityCardHeader"><!-- 6.subColumn -->
-                            <figure><img src="./assets/images/snacks.png" alt="snacks"></figure>
+                            <img src="./assets/images/snacks.png" alt="snacks">
                         </div><!--7.Content Container-->
                         <div class="facilityCardMain">
-                            <h3>Breakfast And Sweets</h3>
-                            <p>Lorem Ipsum Dolor, Sit Amet Consectetur Adipisicing Elit.</p>
+                            <h3 class="fs-4 fw-normal">Breakfast And Sweets</h3>
+                            <p class="fs-6 fw-normal text-start">Lorem Ipsum Dolor, Sit Amet Consectetur Adipisicing Elit.</p>
                         </div>
                     </div>
-                    <div class="coffeeTinBlock facilityItems dflex-col"><!-- 5.Column -->
+                    <div class="col-sm-12 col-md-6 col-xl-3 col-lg-3"><!-- 5.Column -->
                         <div class="facilityCardHeader"><!-- 6.subColumn -->
-                            <figure><img src="./assets/images/coffeeCane.png" alt="coffeeCane"></figure>
+                            <img src="./assets/images/coffeeCane.png" alt="coffeeCane">
                         </div><!--7.Content Container-->
                         <div class="facilityCardMain">
-                            <h3>Ready To Go Coffee</h3>
-                            <p>Lorem Ipsum Dolor, Sit Amet Consectetur Adipisicing Elit.</p> 
+                            <h3 class="fs-4 fw-normal">Ready To Go Coffee</h3>
+                            <p class="fs-6 fw-normal text-start">Lorem Ipsum Dolor, Sit Amet Consectetur Adipisicing Elit.</p> 
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="popular"><!-- 2.Component -->
+        <section class="popular py-3 text-center"><!-- 2.Component -->
             <div class="container"><!-- 3.Component Container-->
                 <div class="row"><!-- 4.Row-1 -->
-                    <div class="col-sm-12"><!-- 5.Column -->
-                        <div class="popularBox dflex-col"><!-- 6.subColumn -->
-                            <figure class="headingImage"><img src="./assets/images/headingImage.jpg"alt="headingImage"></figure>
-                            <h2>Popular Menu</h2><!--7.Content Container-->
+                    <div class="col-sm-12 col-md-9 col-lg-8 col-xl-8 mx-auto"><!-- 5.Column -->
+                            <img src="./assets/images/headingImage.jpg" class="w-25" alt="headingImage">
+                            <h2 class="fs-1 fw-bold">Popular Menu</h2><!--7.Content Container-->
                         </div>
                     </div>
                 </div>
                 <div class="row"><!-- 4.Row-2 -->
-                    <div class="col-sm-12"><!-- 5.Column -->
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-lg-3"><!-- 5.Column -->
                         <div class="loveCoffeeBox dflex-col"><!-- 6.subColumn -->
                             <figure><img src="./assets/images/loveCoffee.png" alt="loveCoffee"></figure>
-                            <h3>Love You Coffee</h3><!--7.Content Container-->
+                            <h3 class="fs-4 fw-normal">Love You Coffee</h3><!--7.Content Container-->
                         </div>
                     </div>
-                    <div class="col-sm-12"><!-- 5.Column -->
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-lg-3"><!-- 5.Column -->
                         <div class="cappuccinoBox dflex-col"><!-- 6.subColumn -->
                             <figure><img src="./assets/images/cappuccinoMenu.png" alt="cappuccinoMenu"></figure>
-                            <h3>Cappuccino</h3><!--7.Content Container-->
+                            <h3 class="fs-4 fw-normal">Cappuccino</h3><!--7.Content Container-->
                         </div>
                     </div>
-                    <div class="col-sm-12"><!-- 5.Column -->
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-lg-3"><!-- 5.Column -->
                         <div class="mochaCoffeeBox dflex-col"><!-- 6.subColumn -->
                             <figure><img src="./assets/images/mochaCoffee.png" alt="mochaCoffee"></figure>
-                            <h3>Mocha Coffee</h3><!--7.Content Container-->
+                            <h3 class="fs-4 fw-normal">Mocha Coffee</h3><!--7.Content Container-->
                         </div>
                     </div>
-                    <div class="col-sm-12"><!-- 5.Column -->
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-lg-3"><!-- 5.Column -->
                         <div class="frappuccinoBox dflex-col"><!-- 6.subColumn -->
                             <figure><img src="./assets/images/frappuccino.png" alt="frappuccino"></figure>
-                            <h3>Frappuccino</h3><!--7.Content Container-->
+                            <h3 class="fs-4 fw-normal">Frappuccino</h3><!--7.Content Container-->
                         </div>
                     </div>
-                    <div class="col-sm-12"><!-- 5.Column -->
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-lg-3"><!-- 5.Column -->
                         <div class="blackCoffeeBox dflex-col"><!-- 6.subColumn -->
                             <figure><img src="./assets/images/blackCoffeeMenu.png" alt="blackCoffeeMenu"></figure>
-                            <h3>Black Coffee</h3><!--7.Content Container-->
+                            <h3 class="fs-4 fw-normal">Black Coffee</h3><!--7.Content Container-->
                         </div>
                     </div>
-                    <div class="col-sm-12"><!-- 5.Column -->
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-lg-3"><!-- 5.Column -->
                         <div class="heartCoffeeBox dflex-col"><!-- 6.subColumn -->
                             <figure><img src="./assets/images/heartCoffee.png" alt="heartCoffee"></figure>
-                            <h3>Love Heart Coffee</h3><!--7.Content Container-->
+                            <h3 class="fs-4 fw-normal">Love Heart Coffee</h3><!--7.Content Container-->
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="gallery py-4 text-center"><!-- 2.Component -->
-            <div class="container text-center"><!-- 3.Component Container-->
-                <div class="row"><!-- 4.Row -->
-                    <div class="col-sm-12"><!-- 5.Column -->
+        <section class="gallery py-3 text-center"><!-- 2.Component -->
+            <div class="container"><!-- 3.Component Container-->
+                <div class="row g-4"><!-- 4.Row -->
+                    <div class="col-sm-12 col-md-9 col-lg-8 col-xl-8 mx-auto"><!-- 5.Column -->
                         <img src="./assets/images/headingImage.jpg" class="w-25" alt="heading">
-                        <h2 style="font-family: Merienda;" class="fs-1 fw-bold">Our Gallery</h2>
+                        <h2 class="fs-1 fw-bold">Our Gallery</h2>
                     </div>
                 </div>
                 <div class="row g-3 justify-content-center"><!-- 4.Row -->
-                    <div class="col-sm-12 col-md-6 col-lg-3 col-xl-4"><!-- 5.Column -->
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4"><!-- 5.Column -->
                         <img src="./assets/images/coffee.jpg" class="w-100" alt="coffee">
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-3 col-xl-4"><!-- 5.Column -->
@@ -212,76 +203,59 @@
                 </div>
             </div>
         </section>
-        <section class="team"><!-- 2.Component -->
+        <section class="team py-3 text-center"><!-- 2.Component -->
             <div class="container"><!-- 3.Component Container-->
                 <div class="row"><!-- 4.Row -->
-                    <div class="col-sm-12"><!-- 5.Column -->
+                    <div class="col-sm-12 col-md-9 col-lg-8 col-xl-8 mx-auto"><!-- 5.Column -->
                         <div class="teamBox dflex-col"><!-- 6.subColumn -->
-                            <figure class="headingImage"><img src="./assets/images/headingImage.jpg"alt="headingImage"></figure>
-                            <h2>Our Team</h2><!--7.Content Container-->
+                            <img src="./assets/images/headingImage.jpg " class="w-25" alt="headingImage">
+                            <h2 class="fs-1 fw-bold">Our Team</h2><!--7.Content Container-->
                         </div>
                     </div>
                 </div>
                 <div class="row"><!-- 4.Row -->
-                    <div class="col-sm-12 col-md-6 col-xl-4 col-lg-3"><!-- 5.Column -->
-                        <div class="memberBox dflex-col"><!-- 6.subColumn -->
-                            <figure><img src="./assets/images/member1.jpg" alt="member!"></figure>
-                            <p class="john">John Deo</p><!--7.Content Container-->
-                        </div>
+                    <div class="col-sm-12 col-md-6 col-xl-4 col-lg-4"><!-- 5.Column -->
+                        <img src="./assets/images/member1.jpg" class="w-100" alt="member1">
+                        <p class="fs-5 fw-normal">John Deo</p><!--7.Content Container-->
                     </div>
-                    <div class="col-sm-12 col-md-6 col-xl-4 col-lg-3"><!-- 5.Column -->
-                        <div class="memberBox dflex-col"><!-- 6.subColumn -->
-                            <figure><img src="./assets/images/member2.jpg" alt="member2"></figure>
-                            <p class="john">John Deo</p><!--7.Content Container-->
-                        </div>
+                    <div class="col-sm-12 col-md-6 col-xl-4 col-lg-4"><!-- 5.Column -->
+                        <img src="./assets/images/member2.jpg" class="w-100" alt="member2">
+                        <p class="fs-5 fw-normal">John Deo</p><!--7.Content Container-->
                     </div>
-                    <div class="col-sm-12 col-md-6 col-xl-4 col-lg-3"><!-- 5.Column -->
-                        <div class="memberBox dflex-col"><!-- 6.subColumn -->
-                            <figure><img src="./assets/images/member3.jpg" alt="member3"></figure>
-                            <p class="john">John Deo</p><!--7.Content Container-->
-                        </div>
+                    <div class="col-sm-12 col-md-6 col-xl-4 col-lg-4"><!-- 5.Column -->
+                        <img src="./assets/images/member3.jpg" class="w-100" alt="member3">
+                        <p class="fs-5 fw-normal">John Deo</p><!--7.Content Container-->
                     </div>
-                    <div class="col-sm-12 col-md-6 col-xl-4 col-lg-3"><!-- 5.Column -->
-                        <div class="memberBox dflex-col"><!-- 6.subColumn -->
-                            <figure><img src="./assets/images/member4.jpg" alt="member4"></figure>
-                            <p class="john">John Deo</p><!--7.Content Container-->
-                        </div>
+                    <div class="col-sm-12 col-md-6 col-xl-4 col-lg-4"><!-- 5.Column -->
+                        <img src="./assets/images/member4.jpg" class="w-100" alt="member4">
+                        <p class="fs-5 fw-normal">John Deo</p><!--7.Content Container-->
                     </div>
-                    <div class="col-sm-12 col-md-6 col-xl-4 col-lg-3"><!-- 5.Column -->
-                        <div class="memberBox dflex-col"><!-- 6.subColumn -->
-                            <figure><img src="./assets/images/member5.jpg" alt="member5"></figure>
-                            <p class="john">John Deo</p><!--7.Content Container-->
-                        </div>
+                    <div class="col-sm-12 col-md-6 col-xl-4 col-lg-4"><!-- 5.Column -->
+                        <img src="./assets/images/member5.jpg" class="w-100" alt="member5">
+                        <p class="fs-5 fw-normal">John Deo</p><!--7.Content Container-->
                     </div>
-                    <div class="col-sm-12 col-md-6 col-xl-4 col-lg-3"><!-- 5.Column -->
-                        <div class="memberBox dflex-col"><!-- 6.subColumn -->
-                            <figure><img src="./assets/images/member6.jpg" alt="member6"></figure>
-                            <p class="john">John Deo</p><!--7.Content Container-->
-                        </div>
+                    <div class="col-sm-12 col-md-6 col-xl-4 col-lg-4"><!-- 5.Column -->
+                        <img src="./assets/images/member6.jpg" class="w-100" alt="member6">
+                        <p class="fs-5 fw-normal">John Deo</p><!--7.Content Container-->
                     </div>
                 </div>
             </div>
         </section>
-        <section class="contact"><!-- 2.Component -->
+        <section class="contact py-3 text-center"><!-- 2.Component -->
             <div class="container"><!-- 3.Component Container-->
                 <div class="row"><!-- 4.Row -->
-                    <div class="col-sm-12"><!-- 5.Column -->
-                        <div class="contactBox"><!-- 6.subColumn -->
-                            <div class="dflex-col">
-                                <figure class="headingImage"><img src="./assets/images/headingImage.jpg"alt="headingImage"></figure>
-                            </div>
-                            <h2 class="dflex-col">Contact Us</h2><!--7.Content Container-->
-                        </div>
+                    <div class="col-sm-12 col-md-9 col-lg-8 col-xl-8 mx-auto"><!-- 5.Column -->
+                        <img src="./assets/images/headingImage.jpg" class="w-25" alt="headingImage">
+                        <h2 class="fs-1 fw-bold">Contact Us</h2><!--7.Content Container-->
                     </div>
                 </div>
-                <div class="row"><!-- 4.Row -->
-                    <div class="col-sm-12"><!-- 5.Column -->
+                <div class="row g-2"><!-- 4.Row -->
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6"><!-- 5.Column -->
                         <div class="pictureBox dflex"><!-- 6.subColumn -->
-                            <figure><img src="./assets/images/contact_img.jpg" alt="contact"></figure><!--7.Content Container-->
+                            <img src="./assets/images/contact_img.jpg" class="w-100" alt="contact"><!--7.Content Container-->
                         </div>
                     </div>
-                    <div class="col-sm-12"><!-- 5.Column -->
-                        <div class="bookingBox dflex-col dflex"><!-- 6.subColumn -->
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 align-items-center"><!-- 5.Column -->
                             <h3>Book A Table</h3><!--7.Content Container-->
                             <form action="">
                                 <div>
@@ -302,62 +276,52 @@
         </section>
     </main>
     <footer><!-- 1.Parent Container -->
-        <div class="contactIcons"><!-- 2.Component -->
+        <div class="contactIcons py-3 text-center"><!-- 2.Component -->
             <div class="container"><!-- 3.Component Container-->
-                <div class="row"><!-- 4.Row -->
-                    <div class="col-sm-12"><!-- 5.Column -->
-                        <div class="emailBox dflex-col"><!-- 6.subColumn -->
+                <div class="row g-4"><!-- 4.Row -->
+                    <div class="col-sm-12 col-lg-6 col-lg-4 col-xl-3"><!-- 5.Column -->
                             <div class="cardHeader">
-                                <i class="fa-solid fa-envelope"></i><!--7.Content Container-->
+                                <i class="fa-solid fa-envelope fs-1 py-2 px-2"></i><!--7.Content Container-->
                             </div>
                             <div class="cardMain">
                                 <h3>Our Email</h3>
                                 <p>Shaakshi@Gmail.com</p>
                                 <p>Hyhy@Gmail.com</p>
-                            </div>
                         </div>
                     </div>
-                    <div class="col-sm-12"><!-- 5.Column -->
-                        <div class="timingBox dflex-col"><!-- 6.subColumn -->
+                    <div class="col-sm-12 col-lg-6 col-lg-4 col-xl-3"><!-- 5.Column -->
                             <div class="cardHeader"><!--7.Content Container-->
-                                <i class="fa-solid fa-clock"></i>
+                                <i class="fa-solid fa-clock fs-1 py-2 px-2"></i>
                             </div>
                             <div class="cardMain">
                                 <h3>Opening Hours</h3>
                                 <p>07:00am to 09:00pm</p>
                             </div>
-                        </div>
                     </div>
-                    <div class="col-sm-12"><!-- 5.Column -->
-                        <div class="locationBox dflex-col"><!-- 6.subColumn -->
+                    <div class="col-sm-12 col-lg-6 col-lg-4 col-xl-3"><!-- 5.Column -->
                             <div class="cardHeader "><!--7.Content Container-->
-                                <i class="fa-solid fa-location-dot"></i>
+                                <i class="fa-solid fa-location-dot fs-1 py-2 px-2"></i>
                             </div>
                             <div class="cardMain">
                                 <h3>Shop Location</h3>
                                 <p>Mumbai, India- 400101</p>
                             </div>
-                        </div>
                     </div>
-                    <div class="numberBlock"><!-- 5.Column -->
-                        <div class="numberBox dflex-col"><!-- 6.subColumn -->
+                    <div class="col-sm-12 col-lg-6 col-lg-4 col-xl-3"><!-- 5.Column -->
                             <div class="cardHeader"><!--7.Content Container-->
-                                <i class="fa-solid fa-phone"></i>
+                                <i class="fa-solid fa-phone fs-1 py-2 px-2"></i>
                             </div>
                             <div class="cardMain">
                                 <h3>Our Number</h3>
                                 <p>+91-123-456-7890</p>
                                 <p>+91-111-222-3333</p>
                             </div>
-                        </div>
                     </div>
                 </div>
-                <div class="copyrightsBody"><!-- 4.Row -->
+                <div class="copyrightsBody text-center"><!-- 4.Row -->
                     <div class="col-sm-12"><!-- 5.Column -->
-                        <div class="copyrightsBox dflex-col"><!-- 6.subColumn -->
-                            <p>© copyright @ 2022 by <span>mr. web designer</span>| all rights reserved</p>
-                            <!--7.Content Container-->
-                        </div>
+                        <p>© copyright @ 2022 by <span>mr. web designer</span>| all rights reserved</p>
+                        <!--7.Content Container-->
                     </div>
                 </div>
             </div>
