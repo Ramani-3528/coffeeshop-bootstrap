@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Google fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap">
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap">
     <!-- Project Title  -->
     <title>Coffee shop website using Bootstrap</title>
     <!-- Favourite Icon  -->
@@ -98,9 +98,9 @@
                 </div>
             </div>
         </section>
-        <section class="popular py-3 text-center"><!-- 2.Component -->
+        <section class="popular py-3 px-5 text-center"><!-- 2.Component -->
             <div class="container"><!-- 3.Component Container-->
-                <div class="row"><!-- 4.Row-1 -->
+                <div class="row g-0"><!-- 4.Row-1 -->
                     <div class="col-12 col-sm-12 col-md-9 col-lg-8 mx-auto"><!-- 5.Column -->
                             <img src="./assets/images/headingImage.jpg" class="w-25" alt="headingImage">
                             <h2 class="fs-1 fw-bold">Popular Menu</h2><!--7.Content Container-->
@@ -223,17 +223,17 @@
                         <h2 class="fs-1 fw-bold">Contact Us</h2><!--7.Content Container-->
                     </div>
                 </div>
-                <div class="row g-2"><!-- 4.Row -->
+                <div class="row g-2 d-flex justify-content-center align-items-center"><!-- 4.Row -->
                     <div class="col-12 col-sm-12 col-md-6 col-lg-6"><!-- 5.Column -->
                         <div class="pictureBox dflex"><!-- 6.subColumn -->
                             <img src="./assets/images/contact_img.jpg" class="w-100" alt="contact"><!--7.Content Container-->
                         </div>
                     </div>
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 d-flex-col align-items-center"><!-- 5.Column -->
-                            <h3 class="fs-2">Book A Table</h3><!--7.Content Container-->
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 border border-dark pb-5 rounded-0 w-35"><!-- 5.Column -->
+                            <h3 class="fs-2 pt-3">Book A Table</h3><!--7.Content Container-->
                             <form action="">
                                 <div class="m-2">
-                                    <input type="text" placeholder="Enter Your Name" class="py-2 w-75">
+                                    <input type="text" placeholder="Enter Your Name" class="py-2 w-75 rounded-0">
                                 </div>
                                 <div class="m-2">
                                     <input type="number" placeholder="Enter Your Number" class="py-2 w-75">
@@ -242,7 +242,7 @@
                                     <input type="number" placeholder="How Many Guests" class="py-2 w-75">
                                 </div>
                             </form>
-                            <button class="button">Send message</button>
+                            <button type="button" class="border-0 py-2 px-4">Send message</button>
                         </div>
                     </div>
                 </div>
@@ -273,7 +273,7 @@
                             </div>
                     </div>
                     <div class="col-12 col-sm-12 col-md-6 col-lg-3"><!-- 5.Column -->
-                            <div class="cardHeader "><!--7.Content Container-->
+                            <div class="cardHeader"><!--7.Content Container-->
                                 <i class="fa-solid fa-location-dot fs-1 py-3 px-3 rounded-circle"></i>
                             </div>
                             <div class="cardMain">
