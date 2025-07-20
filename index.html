@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Google fonts -->
-    <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap">
     <!-- Project Title  -->
     <title>Coffee shop website using Bootstrap</title>
     <!-- Favourite Icon  -->
@@ -21,15 +22,47 @@
 </head>
 <body>
     <header><!-- 1.Parent Container -->
-        <div class="hero text-center"><!-- 2.Component -->
-            <div class="container"><!-- 3.Component Container-->
+        <nav class="navbar navbar-expand-lg py-4 px-5 navbar-expand-lg fixed-top bg-white shadow">
+            <div class="container">
+                <img src="./assets/images/logo.png" alt="logo" width="auto" height="50">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav fs-5">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="home" class="hero text-center"><!-- 2.Component -->
+            <div class="container pb-5"><!-- 3.Component Container-->
                 <div class="row g-2"><!-- 4.Row-->
                     <div class="col-sm-12 col-md-6"><!-- 5.Column -->
                         <div class="heroBox dflex-col"><!-- 6.subColumn -->
                             <h1 class="fs-1 fw-bold">Coffee Heaven</h1><!--7.Content Container-->
-                            <p class="fs-6 fw-normal">Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Adipisci Ipsa Id Vero
+                            <p class="fs-6 fw-normal">Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Adipisci
+                                Ipsa Id Vero
                                 Perferendis, Reiciendis Dolores!</p>
-                            <button type="button" class="border-0 py-2 px-4">About Us</button>
+                            <button type="button" onclick="window.open('#about', '_self')" class="fs-5 border-0 py-2 px-4">About Us</button>
                         </div>
                     </div>
                 </div>
@@ -37,29 +70,31 @@
         </div>
     </header>
     <main><!-- 1.Parent Container -->
-        <section class="ourMenu py-3"><!-- 2.Component -->
+        <section id="about" class="ourMenu py-3"><!-- 2.Component -->
             <div class="container"><!--3.Component Container-->
                 <div class="row align-items-center"><!-- 4.Row-->
                     <div class="col-12 col-sm-12 col-md-6 col-lg-6"><!-- 5.Column-1 -->
                         <div class="imageBox dflex"><!-- 6.subColumn -->
-                            <img src="./assets/images/ourMenu.jpg" class="w-100" alt="menuImage"><!--7.Content Container-->
+                            <img src="./assets/images/ourMenu.jpg" class="w-100"
+                                alt="menuImage"><!--7.Content Container-->
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-6 col--6"><!-- 5.Column-2 -->
                         <h2 class="fs-1 fw-bold">A Cup Of Coffee Can Complete Your Day</h2><!--7.Content Container-->
-                        <p class="fs-6 fw-normal">Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Pariatur, Esse Corrupti.
+                        <p class="fs-6 fw-normal">Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Pariatur,
+                            Esse Corrupti.
                             Incidunt Fuga Sit Numquam Est Consequatur Provident Ipsa Quidem! Lorem</p>
-                        <button type="button" class="fs-5 px-4 py-2 border-0"> Our Menu</button>
+                        <button type="button" onclick="window.open('#menu', '_self')" class="fs-5 px-4 py-2 border-0"> Our Menu</button>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="facility pt-4 text-center">
+        <section class="facility text-center">
             <div class="container">
                 <div class="row  justify-content-center text-center">
                     <div class="col-12 col-sm-12 col-md-9 col-lg-8">
                         <img src="./assets/images/headingImage.jpg" class="w-25" alt="headingImage">
-                        <h2 class="fs-1 fw-bold">Our Facility</h2>
+                        <h2 class="fs-1 fw-bold pb-3">Our Facility</h2>
                     </div>
                 </div>
                 <div class="row">
@@ -98,56 +133,56 @@
                 </div>
             </div>
         </section>
-        <section class="popular py-3 px-5 text-center"><!-- 2.Component -->
+        <section id="menu" class="popular py-3 px-5 text-center"><!-- 2.Component -->
             <div class="container"><!-- 3.Component Container-->
                 <div class="row g-0"><!-- 4.Row-1 -->
                     <div class="col-12 col-sm-12 col-md-9 col-lg-8 mx-auto"><!-- 5.Column -->
-                            <img src="./assets/images/headingImage.jpg" class="w-25" alt="headingImage">
-                            <h2 class="fs-1 fw-bold">Popular Menu</h2><!--7.Content Container-->
-                        </div>
-                    </div>
-                </div>
-                <div class="row"><!-- 4.Row-2 -->
-                    <div class=" col-12 col-md-6 col-lg-4 col-lg-3"><!-- 5.Column -->
-                        <div class="loveCoffeeBox dflex-col"><!-- 6.subColumn -->
-                            <figure><img src="./assets/images/loveCoffee.png" alt="loveCoffee"></figure>
-                            <h3 class="fs-4 fw-normal">Love You Coffee</h3><!--7.Content Container-->
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-lg-3"><!-- 5.Column -->
-                        <div class="cappuccinoBox dflex-col"><!-- 6.subColumn -->
-                            <figure><img src="./assets/images/cappuccinoMenu.png" alt="cappuccinoMenu"></figure>
-                            <h3 class="fs-4 fw-normal">Cappuccino</h3><!--7.Content Container-->
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-lg-3"><!-- 5.Column -->
-                        <div class="mochaCoffeeBox dflex-col"><!-- 6.subColumn -->
-                            <figure><img src="./assets/images/mochaCoffee.png" alt="mochaCoffee"></figure>
-                            <h3 class="fs-4 fw-normal">Mocha Coffee</h3><!--7.Content Container-->
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-lg-3"><!-- 5.Column -->
-                        <div class="frappuccinoBox dflex-col"><!-- 6.subColumn -->
-                            <figure><img src="./assets/images/frappuccino.png" alt="frappuccino"></figure>
-                            <h3 class="fs-4 fw-normal">Frappuccino</h3><!--7.Content Container-->
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-lg-3"><!-- 5.Column -->
-                        <div class="blackCoffeeBox dflex-col"><!-- 6.subColumn -->
-                            <figure><img src="./assets/images/blackCoffeeMenu.png" alt="blackCoffeeMenu"></figure>
-                            <h3 class="fs-4 fw-normal">Black Coffee</h3><!--7.Content Container-->
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-lg-3"><!-- 5.Column -->
-                        <div class="heartCoffeeBox dflex-col"><!-- 6.subColumn -->
-                            <figure><img src="./assets/images/heartCoffee.png" alt="heartCoffee"></figure>
-                            <h3 class="fs-4 fw-normal">Love Heart Coffee</h3><!--7.Content Container-->
-                        </div>
+                        <img src="./assets/images/headingImage.jpg" class="w-25" alt="headingImage">
+                        <h2 class="fs-1 fw-bold">Popular Menu</h2><!--7.Content Container-->
                     </div>
                 </div>
             </div>
+            <div class="row"><!-- 4.Row-2 -->
+                <div class=" col-12 col-md-6 col-lg-4 col-lg-3"><!-- 5.Column -->
+                    <div class="loveCoffeeBox dflex-col"><!-- 6.subColumn -->
+                        <figure><img src="./assets/images/loveCoffee.png" alt="loveCoffee"></figure>
+                        <h3 class="fs-4 fw-normal">Love You Coffee</h3><!--7.Content Container-->
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-lg-3"><!-- 5.Column -->
+                    <div class="cappuccinoBox dflex-col"><!-- 6.subColumn -->
+                        <figure><img src="./assets/images/cappuccinoMenu.png" alt="cappuccinoMenu"></figure>
+                        <h3 class="fs-4 fw-normal">Cappuccino</h3><!--7.Content Container-->
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-lg-3"><!-- 5.Column -->
+                    <div class="mochaCoffeeBox dflex-col"><!-- 6.subColumn -->
+                        <figure><img src="./assets/images/mochaCoffee.png" alt="mochaCoffee"></figure>
+                        <h3 class="fs-4 fw-normal">Mocha Coffee</h3><!--7.Content Container-->
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-lg-3"><!-- 5.Column -->
+                    <div class="frappuccinoBox dflex-col"><!-- 6.subColumn -->
+                        <figure><img src="./assets/images/frappuccino.png" alt="frappuccino"></figure>
+                        <h3 class="fs-4 fw-normal">Frappuccino</h3><!--7.Content Container-->
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-lg-3"><!-- 5.Column -->
+                    <div class="blackCoffeeBox dflex-col"><!-- 6.subColumn -->
+                        <figure><img src="./assets/images/blackCoffeeMenu.png" alt="blackCoffeeMenu"></figure>
+                        <h3 class="fs-4 fw-normal">Black Coffee</h3><!--7.Content Container-->
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-lg-3"><!-- 5.Column -->
+                    <div class="heartCoffeeBox dflex-col"><!-- 6.subColumn -->
+                        <figure><img src="./assets/images/heartCoffee.png" alt="heartCoffee"></figure>
+                        <h3 class="fs-4 fw-normal">Love Heart Coffee</h3><!--7.Content Container-->
+                    </div>
+                </div>
+            </div>
+            </div>
         </section>
-        <section class="gallery py-3 text-center"><!-- 2.Component -->
+        <section id="gallery" class="gallery py-3 text-center"><!-- 2.Component -->
             <div class="container"><!-- 3.Component Container-->
                 <div class="row g-4"><!-- 4.Row -->
                     <div class="col-12 col-sm-12 col-md-9 col-lg-8 mx-auto"><!-- 5.Column -->
@@ -177,7 +212,7 @@
                 </div>
             </div>
         </section>
-        <section class="team py-3 text-center"><!-- 2.Component -->
+        <section id="team" class="team py-3 text-center"><!-- 2.Component -->
             <div class="container"><!-- 3.Component Container-->
                 <div class="row"><!-- 4.Row -->
                     <div class="col-12 col-sm-12 col-md-9 col-lg-8 mx-auto"><!-- 5.Column -->
@@ -215,7 +250,7 @@
                 </div>
             </div>
         </section>
-        <section class="contact py-3 text-center"><!-- 2.Component -->
+        <section id="contact" class="contact py-3 text-center"><!-- 2.Component -->
             <div class="container"><!-- 3.Component Container-->
                 <div class="row"><!-- 4.Row -->
                     <div class="col-12 col-sm-12 col-md-9 col-lg-8 mx-auto"><!-- 5.Column -->
@@ -226,75 +261,78 @@
                 <div class="row g-2 d-flex justify-content-center align-items-center"><!-- 4.Row -->
                     <div class="col-12 col-sm-12 col-md-6 col-lg-6"><!-- 5.Column -->
                         <div class="pictureBox dflex"><!-- 6.subColumn -->
-                            <img src="./assets/images/contact_img.jpg" class="w-100" alt="contact"><!--7.Content Container-->
+                            <img src="./assets/images/contact_img.jpg" class="w-100"
+                                alt="contact"><!--7.Content Container-->
                         </div>
                     </div>
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 border border-dark pb-5 rounded-0 w-35"><!-- 5.Column -->
-                            <h3 class="fs-2 pt-3">Book A Table</h3><!--7.Content Container-->
-                            <form action="">
-                                <div class="m-2">
-                                    <input type="text" placeholder="Enter Your Name" class="py-2 w-75 rounded-0">
-                                </div>
-                                <div class="m-2">
-                                    <input type="number" placeholder="Enter Your Number" class="py-2 w-75">
-                                </div>
-                                <div class="m-2">
-                                    <input type="number" placeholder="How Many Guests" class="py-2 w-75">
-                                </div>
-                            </form>
-                            <button type="button" class="border-0 py-2 px-4">Send message</button>
-                        </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 border border-black pb-5 rounded-0 w-35">
+                        <!-- 5.Column -->
+                        <h3 class="fs-2 pt-3">Book A Table</h3><!--7.Content Container-->
+                        <form action="" class="fs-3">
+                            <div class="m-4">
+                                <input type="text" placeholder="Enter Your Name" class="py-2 w-100 rounded-0">
+                            </div>
+                            <div class="m-4">
+                                <input type="number" placeholder="Enter Your Number" class="py-2 w-100">
+                            </div>
+                            <div class="m-4">
+                                <input type="number" placeholder="How Many Guests" class="py-2 w-100">
+                            </div>
+                        </form>
+                        <button type="button" class="fs-5 border-0 py-2 px-4">Send message</button>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
     </main>
     <footer><!-- 1.Parent Container -->
-        <div class="contactIcons py-3 text-center"><!-- 2.Component -->
+        <div class="contactIcons text-center"><!-- 2.Component -->
             <div class="container"><!-- 3.Component Container-->
-                <div class="row g-4"><!-- 4.Row -->
+                <div class="row g-4 py-3"><!-- 4.Row -->
                     <div class="col-12 col-sm-12 col-md-6 col-lg-3"><!-- 5.Column -->
-                            <div class="cardHeader">
-                                <i class="fa-solid fa-envelope fs-1 py-3 px-3 rounded-circle"></i><!--7.Content Container-->
-                            </div>
-                            <div class="cardMain">
-                                <h3>Our Email</h3>
-                                <p>Shaakshi@Gmail.com</p>
-                                <p>Hyhy@Gmail.com</p>
+                        <div class="cardHeader pb-4">
+                            <i class="fa-solid fa-envelope fs-1 py-3 px-3 rounded-circle"></i><!--7.Content Container-->
+                        </div>
+                        <div class="cardMain">
+                            <h3 class="fs-5">Our Email</h3>
+                            <p class="fs-5">Shaakshi@Gmail.com</p>
+                            <p class="fs-5">Hyhy@Gmail.com</p>
                         </div>
                     </div>
                     <div class="col-12 col-sm-12 col-md-6 col-lg-3"><!-- 5.Column -->
-                            <div class="cardHeader"><!--7.Content Container-->
-                                <i class="fa-solid fa-clock fs-1 py-3 px-3 rounded-circle"></i>
-                            </div>
-                            <div class="cardMain">
-                                <h3>Opening Hours</h3>
-                                <p>07:00am to 09:00pm</p>
-                            </div>
+                        <div class="cardHeader pb-4"><!--7.Content Container-->
+                            <i class="fa-solid fa-clock fs-1 py-3 px-3 rounded-circle"></i>
+                        </div>
+                        <div class="cardMain">
+                            <h3 class="fs-5">Opening Hours</h3>
+                            <p class="fs-5">07:00am to 09:00pm</p>
+                        </div>
                     </div>
                     <div class="col-12 col-sm-12 col-md-6 col-lg-3"><!-- 5.Column -->
-                            <div class="cardHeader"><!--7.Content Container-->
-                                <i class="fa-solid fa-location-dot fs-1 py-3 px-3 rounded-circle"></i>
-                            </div>
-                            <div class="cardMain">
-                                <h3>Shop Location</h3>
-                                <p>Mumbai, India- 400101</p>
-                            </div>
+                        <div class="cardHeader pb-4"><!--7.Content Container-->
+                            <i class="fa-solid fa-location-dot fs-1 py-3 px-3 rounded-circle"></i>
+                        </div>
+                        <div class="cardMain">
+                            <h3 class="fs-5">Shop Location</h3>
+                            <p class="fs-5">Mumbai, India- 400101</p>
+                        </div>
                     </div>
                     <div class="col-12 col-sm-12 col-md-6 col-lg-3"><!-- 5.Column -->
-                        <div class="cardHeader"><!--7.Content Container-->
+                        <div class="cardHeader pb-4"><!--7.Content Container-->
                             <i class="fa-solid fa-phone fs-1 py-3 px-3 rounded-circle"></i>
                         </div>
                         <div class="cardMain">
-                            <h3>Our Number</h3>
-                            <p>+91-123-456-7890</p>
-                            <p>+91-111-222-3333</p>
+                            <h3 class="fs-5">Our Number</h3>
+                            <p class="fs-5">+91-123-456-7890</p>
+                            <p class="fs-5">+91-111-222-3333</p>
                         </div>
                     </div>
                 </div>
                 <div class="copyrightsBody text-center"><!-- 4.Row -->
                     <div class="col-sm-12"><!-- 5.Column -->
-                        <p>© copyright @ 2022 by <span>mr. web designer</span>| all rights reserved</p>
+                        <p class="fs-5 pt-4 mb-0 border-top border-2 border-black">© copyright @ 2022 by <span>mr. web
+                                designer</span>| all rights reserved</p>
                         <!--7.Content Container-->
                     </div>
                 </div>
@@ -302,4 +340,5 @@
         </div>
     </footer>
 </body>
+
 </html>

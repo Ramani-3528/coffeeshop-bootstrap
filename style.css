@@ -39,6 +39,14 @@ i{
     color: var(--secondaryColor);
 }
 
+button:hover{
+    background-color: var(--tertiararyColor);
+}
+
 input{
     border: 1px solid var(--tertiararyColor);
+}
+
+span{
+    color: var(--primaryColor);
 }
