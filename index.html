@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,37 +21,27 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <header><!-- 1.Parent Container -->
-        <nav class="navbar navbar-expand-lg py-4 px-5 navbar-expand-lg fixed-top bg-white shadow">
-            <div class="container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary py-4 px-5 fixed-top shadow">
+            <div class="container-fluid">
                 <img src="./assets/images/logo.png" alt="logo" width="auto" height="50">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
-            <div class="navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav fs-5">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#menu">Menu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#gallery">Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#team">Team</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
-                    </li>
-                </ul>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav fs-5">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    <a class="nav-link active" aria-current="page" href="#about">About</a>
+                    <a class="nav-link active" aria-current="page" href="#menu">Menu</a>
+                    <a class="nav-link active" aria-current="page" href="#gallery">Gallery</a>
+                    <a class="nav-link active" aria-current="page" href="#team">Team</a>
+                    <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
+                </div>
             </div>
         </nav>
         <div id="home" class="hero text-center"><!-- 2.Component -->
@@ -62,7 +53,8 @@
                             <p class="fs-6 fw-normal">Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Adipisci
                                 Ipsa Id Vero
                                 Perferendis, Reiciendis Dolores!</p>
-                            <button type="button" onclick="window.open('#about', '_self')" class="fs-5 border-0 py-2 px-4">About Us</button>
+                            <button type="button" onclick="window.open('#about', '_self')"
+                                class="fs-5 border-0 py-2 px-4">About Us</button>
                         </div>
                     </div>
                 </div>
@@ -84,7 +76,8 @@
                         <p class="fs-6 fw-normal">Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Pariatur,
                             Esse Corrupti.
                             Incidunt Fuga Sit Numquam Est Consequatur Provident Ipsa Quidem! Lorem</p>
-                        <button type="button" onclick="window.open('#menu', '_self')" class="fs-5 px-4 py-2 border-0"> Our Menu</button>
+                        <button type="button" onclick="window.open('#menu', '_self')" class="fs-5 px-4 py-2 border-0">
+                            Our Menu</button>
                     </div>
                 </div>
             </div>
@@ -339,6 +332,9 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

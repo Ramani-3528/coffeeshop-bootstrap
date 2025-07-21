@@ -10,6 +10,7 @@
     --ffsecondary: "Nunito";
 }
 
+
 body{
     background-color: var(--secondaryColor);
     color: var(--tertiararyColor);
@@ -40,7 +41,7 @@ i{
 }
 
 button:hover{
-    background-color: var(--tertiararyColor);
+    /* background-color: var(--tertiararyColor); */
 }
 
 input{
