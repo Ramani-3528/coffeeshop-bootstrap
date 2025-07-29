@@ -10,6 +10,9 @@
     --ffsecondary: "Nunito";
 }
 
+html {
+    scroll-padding-top: 6rem;
+}
 
 body{
     background-color: var(--secondaryColor);
@@ -41,7 +44,7 @@ i{
 }
 
 button:hover{
-    /* background-color: var(--tertiararyColor); */
+    background-color: var(--tertiararyColor);
 }
 
 input{
