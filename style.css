@@ -47,6 +47,11 @@ button:hover{
     background-color: var(--tertiararyColor);
 }
 
+.headingImage{
+    height: auto;
+    width: 18rem;
+}
+
 input{
     border: 1px solid var(--tertiararyColor);
 }
